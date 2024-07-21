@@ -1,28 +1,35 @@
-body{
+body {
     font-family: "Plus Jakarta Sans", sans-serif !important;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-.container{
+
+.container {
     flex: 1;
 }
 
-.navbar{
-    height:5rem;
+.navbar {
+    height: 5rem;
     background-color: white;
 }
-.fa-compass{
-    color:#fe424d;
+
+.fa-compass {
+    color: #fe424d;
     font-size: 2rem;
 }
-.nav-link{
+
+.nav-link {
     color: #222222 !important;
+}
+
+.navbar-brand i {
+    color: #fe424d;
 }
 
 /* Footer */
 
-.f-info{
+.f-info {
     display: flex;
     height: 8rem;
     background-color: #ebebeb;
@@ -31,22 +38,30 @@ body{
     align-items: space-evenly;
     text-align: center;
 }
+
 .f-info-socials,
 .f-info-copy,
-.f-info-links{
+.f-info-links {
     width: 100%;
     font-size: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.f-info-socials i{
+
+.f-info-socials i {
     margin-right: 1rem;
 }
-.f-info-links a{
+
+.f-info-links a {
     text-decoration: none;
     color: #222222;
 }
-.f-info-links a:hover{
+
+.f-info-links a:hover {
     text-decoration: underline;
+}
+
+.taxSwitch-on{
+    display: none;
 }

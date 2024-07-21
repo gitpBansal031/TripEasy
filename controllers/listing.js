@@ -3,7 +3,7 @@ const Listing = require("../models/listing");
 //(show all listings)
 module.exports.index = async (req, res, next) => {
     const allListings = await Listing.find();
-    res.render("listing/listing.ejs", { allListings });
+    res.render("listing/listing.ejs", { allListings});
 };
 
 //(show particular listing)

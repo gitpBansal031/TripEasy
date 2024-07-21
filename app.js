@@ -26,8 +26,8 @@ const expressError = require("./utils/expressError");
 const MongoStore = require('connect-mongo');
 
 //<-------------Additional Settings-------------->
-// const mdblink='mongodb://127.0.0.1:27017/tripEasy';
-const mdblink=process.env.altasdburl;
+const mdblink='mongodb://127.0.0.1:27017/tripEasy';
+// const mdblink=process.env.altasdburl;
 async function main() {
     await mongoose.connect(mdblink);
 }

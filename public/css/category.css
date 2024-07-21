@@ -24,16 +24,14 @@
   font-size: 0.8rem;
 }
 
-.tax-text{
-  display: none;
-}
-
 .tax-toggle{
+  background-color: #fe424d;
+  color: white;
+  font-size: 0.8rem;
   height: 2.5rem;
-  border: 1px solid black;
   border-radius: 1rem;
   padding: 1rem;
-  margin-left: 10rem;
+  margin-left: 6rem;
   display: flex;
   align-items: center ;
 }
