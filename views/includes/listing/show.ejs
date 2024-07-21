@@ -1,0 +1,27 @@
+<!-- showing listing info in show listing -->
+
+<!-- div containing the listing -->
+<div class="row mt-3">
+    <!-- heading subdiv -->
+    <div class="col-8 offset-3">
+        <h2>
+            <%=listing.title %>
+        </h2> <br>
+    </div>
+    <!-- //subdiv containing image and info about the listing -->
+    <div class="card listing-card col-6 offset-3 show-card">
+        <img src="<%=listing.image.url%>" class="card-img-top show-img" alt="listing_image">
+        <div class="card-body">
+            <br>
+            <p class="card-text">
+                </b>
+                @<%=listing.owner.username%>
+                    <br>
+                    <%=listing.description %> <br>
+                        &#8377; <%=listing.price.toLocaleString("en-in") %>/night <br>
+                            <%=listing.country %> <br>
+                                <%=listing.location %>
+            </p>
+        </div>
+    </div>
+</div>

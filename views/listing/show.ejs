@@ -1,0 +1,20 @@
+<% layout("./layouts/boilerplate") %>
+    <!-- div 1 listing info -->
+    <%-include("../includes/listing/show.ejs") %>
+
+        <!-- div2 containing delete and update button -->
+        <%if(currUser && currUser._id.equals(listing.owner._id)){%>
+            <div class="btns">
+                <a href="/listing/update/<%=listing.id%>" class="btn btn-dark add-btn">Update</a>
+                <a href="/listing/delete/<%=listing.id%>" class="btn btn-dark add-btn">Delete</a>
+            </div>
+            <%}%>
+
+                <!-- div3 containing reviews -->
+                <div class="col-8 offset-3">
+                    <!-- review form -->
+                    <%-include("../includes/review/newForm.ejs") %>
+                    <hr>
+                    <!-- display all reviews -->
+                    <%-include("../includes/review/show.ejs") %>
+                </div>

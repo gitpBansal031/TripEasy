@@ -1,0 +1,49 @@
+/* Home Page card Styling */
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;   
+}
+.card-body{
+    padding: 0px !important;
+}
+.card-text p{
+    font-weight: 400 !important;
+}
+.listing-link{
+    text-decoration: none;
+}
+/* Card Effect */
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.5;
+    background-color: white;
+}
+.add-btn,
+.update-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Show */
+.show-img{
+    height: 30vh;
+}
+.btns{
+    margin-left: 550px;
+    margin-bottom: 100px;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.show-card{
+    padding-left: 0px;
+    padding-right: 0px;
+}
