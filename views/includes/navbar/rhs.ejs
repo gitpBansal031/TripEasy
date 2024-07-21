@@ -1,7 +1,8 @@
 <!-- addNewListing/login,signup/logout/loadData options-->
 
 <div class="navbar-nav ms-auto">
-    <a class="nav-link" href="/listing/new">Add new Listing</a>
+    <a class="nav-link" href="/listing/new">Add Listing</a>
+    <a class="nav-link" href="/listing" title="Explore"><i class="fa-solid fa-globe"></i></a>
     <%if(currUser && currUser.username=="tripEasy" ){%>
         <a class="nav-link" href="/loadSampleData">Load Data</a>
         <%}%>

@@ -2,34 +2,38 @@
 
 <!--to remove browser's default settings/designs we use novalidate-->
 <!-- included a bootstrap class needs-validation to include bootstrap stying for the form validations -->
-<form method="post" action="/listing" novalidate class="needs-validation" enctype="multipart/form-data">
+<form method="post" action="/listing" novalidate class="was-validated" enctype="multipart/form-data">
     <div class="mb-3">
         <label for="title" class="form-label">Title</label>
         <input type="text" placeholder="Enter title" name="Listing[title]" class="form-control" required>
-        <div class="valid-feedback">Valid-feedback</div>
-        <div class="invalid-feedback">Invalid-feedback</div>
+        <div class="invalid-feedback">Required</div>
     </div>
     <div class="mb-3">
         <label for="description" class="form-label">Description</label>
         <textarea name="Listing[description]" class="form-control" required></textarea>
+        <div class="invalid-feedback">Required</div>
     </div>
     <div class="mb-3">
         <label for="image" class="form-label">Upload Image <i style="font-size: 0.8rem;">(only .png/.jpg/.jpeg files)</label>
         <input type="file" name="Listing[image]" class="form-control" required>
+        <div class="invalid-feedback">Required</div>
     </div>
     <div class="row">
         <div class="mb-3 col-md-4">
             <label for="price" class="form-label">Price</label>
             <input type="number" placeholder="Enter price" name="Listing[price]" class="form-control" required>
+            <div class="invalid-feedback">Required</div>
         </div>
         <div class="mb-3 col-md-8">
             <label for="country" class="form-label">Country</label>
             <input type="text" placeholder="Enter country" name="Listing[country]" class="form-control" required>
+            <div class="invalid-feedback">Required</div>
         </div>
     </div>
     <div class="mb-3">
         <label for="location" class="form-label">Location</label>
         <input type="text" placeholder="Enter location" name="Listing[location]" class="form-control" required>
+        <div class="invalid-feedback">Required</div>
     </div>
     <button class="btn btn-dark add-btn mt-3">Submit</button>
     <br><br><br>

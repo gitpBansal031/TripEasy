@@ -23,8 +23,9 @@ body {
     color: #222222 !important;
 }
 
-.navbar-brand i {
+.fa-otter {
     color: #fe424d;
+    font-size: 1.2rem;
 }
 
 /* Footer */
